@@ -7,7 +7,15 @@
   color: #000000;
 }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 body {
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
@@ -58,7 +66,7 @@ nav ul.nav {
 }
 
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url('../images/hero/hero.jpg');
   background-repeat: no-repeat;
@@ -70,6 +78,7 @@ nav ul.nav {
 .about {
   width: 100%;
   height: 469px;
+  background-color: #f7f7f7
 }
 
 .about [alt='chain icon'] {
@@ -87,6 +96,144 @@ nav ul.nav {
 
 .about p {
   text-align: center;
+  color: #848789;
   padding: 35px 150px 0;
   line-height: 34px;
+}
+
+/* Work */
+.work {
+  width: 100%;
+}
+
+.work [alt='bicycle crank icon'],
+[alt='bicycle frame icon'],
+[alt='bicycle crank icon'] {
+  padding: 70px 0 32px 0;
+}
+
+.work h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.work p {
+  padding: 25px 50px 0 50px;
+  font-size: 16px;
+  color: #848789;
+  line-height: 30px;
+}
+
+.hline {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+  background-color: #848789;
+  width: 50px;
+  height: 1px;
+}
+
+.oliva div:nth-of-type(1) {
+  float: left;
+  height: 600px;
+  width: 66.6666%;
+  background-image: url('../images/bike_01/brooks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oliva div:nth-of-type(2) {
+  float: left;
+  height: 400px;
+  width: 33.3333%;
+  text-align: center;
+}
+
+.oliva div:nth-of-type(3) {
+  float: left;
+  height: 200px;
+  width: 33.3333%;
+  background-image: url('../images/bike_01/saddle_bike02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boriosa div:nth-of-type(1) {
+  float: left;
+  height: 600px;
+  width: 33.3333%;
+}
+
+.boriosa div:nth-of-type(1) div:nth-of-type(1) {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.boriosa div:nth-of-type(1) div:nth-of-type(2) {
+  height: 200px;
+  width: 100%;
+  background-image: url('../images/bike_02/saddle_bike02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boriosa div:nth-of-type(2) {
+  float: left;
+  height: 600px;
+  width: 66.6666%;
+  background-image: url('../images/bike_02/vintage_bike.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.hulot {
+  width: 100%;
+  height: 600px;
+}
+
+.hulot__bike-frame {
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+  background-image: url('../images/bike_03/bike03_frame.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hulot div:nth-of-type(2) {
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+}
+
+.hulot div:nth-of-type(2) div:nth-of-type(1) {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.hulot div:nth-of-type(2) div:nth-of-type(2) {
+  height: 200px;
+  width: 100%;
+  background-image: url('../images/bike_03/bike03_wheel.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hulot div:nth-of-type(3) {
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+  background-image: url('../images/bike_03/bike03.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  width: 100%;
+  height: 469px;
 }
