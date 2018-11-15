@@ -160,10 +160,24 @@ nav ul.nav {
 }
 
 .oliva div:nth-of-type(2) {
+  position: relative;
   float: left;
   height: 400px;
   width: 33.3333%;
   text-align: center;
+}
+
+.oliva div:nth-of-type(1).triangle {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  background-image: none;
+  background-color: #fff;
+  z-index: 5;
 }
 
 .oliva div:nth-of-type(3) {
@@ -182,9 +196,23 @@ nav ul.nav {
 }
 
 .boriosa div:nth-of-type(1) div:nth-of-type(1) {
+  position: relative;
   height: 400px;
   width: 100%;
   text-align: center;
+}
+
+.boriosa div:nth-of-type(1) div:nth-of-type(1).triangle {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  background-image: none;
+  background-color: #fff;
+  z-index: 5;
 }
 
 .boriosa div:nth-of-type(1) div:nth-of-type(2) {
@@ -226,9 +254,24 @@ nav ul.nav {
 }
 
 .hulot div:nth-of-type(2) div:nth-of-type(1) {
+  position: relative;
   height: 400px;
   width: 100%;
   text-align: center;
+}
+
+
+.hulot div:nth-of-type(2) div:nth-of-type(1).triangle {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  background-image: none;
+  background-color: #fff;
+  z-index: 5;
 }
 
 .hulot div:nth-of-type(2) div:nth-of-type(2) {

@@ -1,7 +1,7 @@
-const btnAbout = document.querySelector('.nav__item:nth-child(1)');
-const btnWork = document.querySelector('.nav__item:nth-child(3)');
-const btnShop = document.querySelector('.nav__item:nth-child(5)');
-const btnContact = document.querySelector('.nav__item:nth-child(7)');
+const btnAbout = document.querySelector('.nav__item:nth-child(1) a');
+const btnWork = document.querySelector('.nav__item:nth-child(3) a');
+const btnShop = document.querySelector('.nav__item:nth-child(5) a');
+const btnContact = document.querySelector('.nav__item:nth-child(7) a');
 
 btnAbout.addEventListener('click', function () {
   window.scrollTo({
@@ -9,6 +9,7 @@ btnAbout.addEventListener('click', function () {
     left: 0,
     behavior: 'smooth'
   });
+
 });
 
 btnWork.addEventListener('click', function () {
