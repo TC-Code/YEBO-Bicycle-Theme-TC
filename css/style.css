@@ -163,8 +163,9 @@ nav ul.nav {
 .oliva img[alt='bike icon'] {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: -50%;
   transform: translate(-50%, -50%);
+  transition: .7s;
 }
 
 .oliva div:nth-of-type(2) {
@@ -245,8 +246,9 @@ nav ul.nav {
 .boriosa img[alt='vintage icon'] {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: -50%;
+  transform: translate(50%, -50%);
+  transition: .7s;
 }
 
 .hulot {
@@ -267,8 +269,9 @@ nav ul.nav {
 .hulot img[alt='bicycles since 1926 icon'] {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: -50%;
   transform: translate(-50%, -50%);
+  transition: .7s;
 }
 
 .hulot div:nth-of-type(2) {

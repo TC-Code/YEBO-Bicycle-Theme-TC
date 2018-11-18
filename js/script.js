@@ -36,3 +36,34 @@ btnContact.addEventListener('click', function () {
     behavior: 'smooth'
   });
 });
+
+//Scroll - slide icons in 'Work' section.
+const bikeIcon = document.querySelector('.oliva img[alt="bike icon"]');
+const vintageIcon = document.querySelector('.boriosa img[alt="vintage icon"]');
+const sinceIcon = document.querySelector('.hulot img[alt="bicycles since 1926 icon"]');
+
+function changeIcon() {
+  const scrollHeight = window.scrollY;
+  const olivaDistanceFromTop = document.querySelector('.work .oliva').offsetTop;
+  const boriosaDistanceFromTop = document.querySelector('.work .boriosa').offsetTop;
+  const hulotDistanceFromTop = document.querySelector('.work .hulot').offsetTop;
+
+  if (scrollHeight > olivaDistanceFromTop) {
+    bikeIcon.style = 'left: 50%'
+  };
+
+  if (scrollHeight > boriosaDistanceFromTop) {
+    vintageIcon.style = 'right: 50%'
+  }
+
+  if (scrollHeight > hulotDistanceFromTop) {
+    sinceIcon.style = 'left: 50%'
+  }
+
+  if (scrollHeight < 100) {
+    bikeIcon.style = 'left: -50%';
+    vintageIcon.style = 'right: -50%';
+    sinceIcon.style = 'left: -50%'
+  }
+}
+window.addEventListener('scroll', changeIcon);
