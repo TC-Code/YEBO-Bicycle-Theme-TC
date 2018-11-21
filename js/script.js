@@ -67,3 +67,46 @@ function changeIcon() {
   }
 }
 window.addEventListener('scroll', changeIcon);
+
+//Twiter - quotes
+const quoteList = [{
+    img: '../images/twitter/twitter-icon.png',
+    author: 'AOD New York  @aod  /  35 min',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor blandit sem at finibus. Donec consequat convallis magna, in accumsan odio euismod vitae.'
+  },
+  {
+    img: '../images/twitter/twitter-icon.png',
+    author: 'WAT London  @wat  /  5 min',
+    quote: 'Ut nec felis purus. In hac habitasse platea dictumst. Nulla mattis massa non nulla rhoncus commodo.'
+  },
+  {
+    img: '../images/twitter/twitter-icon.png',
+    author: 'ZPO Oslo  @zpo  /  47 min',
+    quote: 'Suspendisse mi tellus, vulputate non sagittis ac, sollicitudin nec orci. Sed in augue sit amet est varius porta. '
+  }
+];
+
+const carousel = document.querySelector('.carousel');
+const quoteOne = document.querySelector('li[data-slide="slide1"] p');
+const authorOne = document.querySelector('li[data-slide="slide1"] h6');
+const quoteTwo = document.querySelector('li[data-slide="slide2"] p');
+const authorTwo = document.querySelector('li[data-slide="slide2"] h6');
+const quoteThree = document.querySelector('li[data-slide="slide3"] p');
+const authorThree = document.querySelector('li[data-slide="slide3"] h6');
+
+quoteOne.textContent = quoteList[0].quote;
+authorOne.textContent = quoteList[0].author;
+quoteTwo.textContent = quoteList[1].quote;
+authorTwo.textContent = quoteList[1].author;
+quoteThree.textContent = quoteList[2].quote;
+authorThree.textContent = quoteList[2].author;
+
+// Quote change
+const time = 5000;
+
+function changeSlide() {
+  let firstSlide = document.querySelector('.carousel').firstElementChild;
+  let lastSlide = document.querySelector('.carousel').lastElementChild;
+  carousel.insertBefore(lastSlide, firstSlide);
+}
+const carouselInterval = setInterval(changeSlide, time);

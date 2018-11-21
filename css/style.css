@@ -319,10 +319,38 @@ nav ul.nav {
 }
 
 /* Twitter */
+
 .twitter {
   width: 100%;
   height: 470px;
+  overflow: hidden;
+  text-align: center;
   background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: 400%;
+}
+
+.carousel__item {
+  width: 25%;
+  float: left;
+}
+
+.carousel__item h6 {
+  margin-top: 20px;
+  color: #848789;
+  font-size: 18px;
+}
+
+.carousel__item p {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  padding: 20px 30px;
 }
 
 /* Shop */
@@ -349,7 +377,9 @@ nav ul.nav {
   background-image: url('../images/shop/box01/brooks-saddle.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
+
 
 .shop .box01 div:nth-child(2) {
   float: left;
@@ -358,6 +388,7 @@ nav ul.nav {
   background-image: url('../images/shop/box01/saddles.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
 
 .shop .box01 div:nth-child(3) {
@@ -367,6 +398,7 @@ nav ul.nav {
   background-image: url('../images/shop/box01/brooks-saddle-big.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
 
 /* Shop gallery box 02 */
@@ -374,6 +406,7 @@ nav ul.nav {
   width: 33.3333%;
   height: 100%;
   float: left;
+  transition: .5s;
 }
 
 .shop .box02 div:nth-child(1) {
@@ -383,6 +416,7 @@ nav ul.nav {
   background-image: url('../images/shop/box02/bike-bag.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
 
 .shop .box02 div:nth-child(2) {
@@ -392,6 +426,7 @@ nav ul.nav {
   background-image: url('../images/shop/box02/bike-raleich.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
 
 /* Shop gallery box 03 */
@@ -400,6 +435,7 @@ nav ul.nav {
   width: 33.3333%;
   float: left;
   height: 100%;
+  transition: .5s;
 }
 
 .shop .box03 div:nth-child(1) {
@@ -409,6 +445,7 @@ nav ul.nav {
   background-image: url('../images/shop/box03/shop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
 
 .shop .box03 div:nth-child(2) {
@@ -418,6 +455,7 @@ nav ul.nav {
   background-image: url('../images/shop/box03/saddle-world.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
 }
 
 .shop .box03 div:nth-child(3) {
@@ -427,6 +465,45 @@ nav ul.nav {
   background-image: url('../images/shop/box03/bag.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .5s;
+}
+
+.shop .box01 div:nth-child(1) img,
+.shop .box01 div:nth-child(2) img,
+.shop .box01 div:nth-child(3) img,
+.shop .box02 div:nth-child(1) img,
+.shop .box02 div:nth-child(2) img,
+.shop .box03 div:nth-child(1) img,
+.shop .box03 div:nth-child(2) img,
+.shop .box03 div:nth-child(3) img {
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop .box01 div:nth-child(1):hover,
+.shop .box01 div:nth-child(2):hover,
+.shop .box01 div:nth-child(3):hover,
+.shop .box02 div:nth-child(1):hover,
+.shop .box02 div:nth-child(2):hover,
+.shop .box03 div:nth-child(1):hover,
+.shop .box03 div:nth-child(2):hover,
+.shop .box03 div:nth-child(3):hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1000px rgba(100, 194, 158, .5);
+}
+
+.shop .box01 div:nth-child(1):hover img,
+.shop .box01 div:nth-child(2):hover img,
+.shop .box01 div:nth-child(3):hover img,
+.shop .box02 div:nth-child(1):hover img,
+.shop .box02 div:nth-child(2):hover img,
+.shop .box03 div:nth-child(1):hover img,
+.shop .box03 div:nth-child(2):hover img,
+.shop .box03 div:nth-child(3):hover img {
+  display: block;
 }
 
 /* Shop button */
@@ -449,6 +526,11 @@ nav ul.nav {
   outline: none;
   border: 1px solid #94979a;
   cursor: pointer;
+  transition: .5s;
+}
+
+.shop__discover button:hover {
+  border: 1px solid rgba(100, 194, 158, .5);
 }
 
 /* Mailing */
@@ -488,6 +570,11 @@ nav ul.nav {
   color: #929292;
   outline: none;
   border: 1px solid #929292;
+  transition: .5s;
+}
+
+.mailing input:hover {
+  border: 1px solid rgba(100, 194, 158, .5);
 }
 
 .mailing button {
@@ -501,6 +588,12 @@ nav ul.nav {
   font-size: 24px;
   text-transform: capitalize;
   color: #fff;
+  transition: .5s;
+}
+
+.mailing button:hover {
+  background-color: rgba(63, 156, 120);
+  cursor: pointer;
 }
 
 /* Footer */
@@ -579,4 +672,35 @@ footer .handcrafted img {
   left: 135px;
   transform: translateY(-50%);
   float: left;
+}
+
+footer img {
+  cursor: pointer;
+}
+
+/* Button - go to top */
+.btn-top {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #64c29e;
+  cursor: pointer;
+}
+
+.arrow-up {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  transition: .4s;
+}
+
+.btn-top:hover .arrow-up {
+  position: relative;
+  top: 30%;
 }
