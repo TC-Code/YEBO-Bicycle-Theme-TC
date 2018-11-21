@@ -110,3 +110,27 @@ function changeSlide() {
   carousel.insertBefore(lastSlide, firstSlide);
 }
 const carouselInterval = setInterval(changeSlide, time);
+
+// Button "Go To Top"
+const btnTop = document.querySelector('.btn-top');
+
+const goToTop = function () {
+  window.addEventListener('scroll', function () {
+    aboutDistanceFromTop = document.querySelector('.about').offsetTop;
+    scrollValue = window.scrollY;
+    if (scrollValue > aboutDistanceFromTop) {
+      btnTop.style.display = 'block';
+    } else {
+      btnTop.style.display = 'none';
+    }
+  })
+}
+goToTop()
+
+btnTop.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+})
