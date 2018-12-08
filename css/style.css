@@ -37,7 +37,7 @@ body {
 /* Header */
 header {
   position: relative;
-  /* width: 100%; */
+  width: 100%;
 }
 
 nav {
@@ -45,7 +45,7 @@ nav {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 792px;
+  min-width: 768px;
   height: 77px;
   margin-top: 35px;
 }
@@ -89,6 +89,14 @@ nav ul.nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+.hero img {
+  position: relative;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
 }
 
 /* About Us */
@@ -605,13 +613,13 @@ footer {
   position: relative;
   width: 100%;
   height: 200px;
+  padding: 0 40px;
   background-color: #f7f7f7;
 }
 
 footer .address,
-.socials,
 .handcrafted {
-  width: 33.3333%;
+  width: 28%;
   height: 100%;
 }
 
@@ -621,12 +629,10 @@ footer .address {
 
 footer .address div:first-of-type {
   float: right;
-  margin-right: 20px;
   position: relative;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-
 }
 
 footer .address * {
@@ -635,18 +641,16 @@ footer .address * {
 
 footer .address div h3:first-of-type {
   font-size: 16px;
-}
-
-footer .address div p:first-of-type {
-  padding: 8px 0;
+  padding-bottom: 8px;
 }
 
 footer .address *p {
   font-size: 14px;
-
 }
 
 footer .socials {
+  width: 44%;
+  height: 100%;
   position: relative;
   float: left;
 }
@@ -655,17 +659,16 @@ footer .socials div img:nth-of-type(2) {
   margin: 0 15px;
 }
 
-
 footer .handcrafted {
   float: left;
 }
 
 footer .handcrafted p {
   position: relative;
-  left: 130px;
   top: 50%;
   transform: translateY(-50%);
   float: left;
+  margin-right: 10px;
   font-size: 14px;
   color: #848789;
 }
@@ -673,7 +676,6 @@ footer .handcrafted p {
 footer .handcrafted img {
   position: relative;
   top: 50%;
-  left: 135px;
   transform: translateY(-50%);
   float: left;
 }
@@ -717,3 +719,46 @@ footer img {
 }
 
 /* Media Queries */
+@media (max-width: 768px) {
+
+  nav ul.nav {
+    font-size: 16px;
+  }
+
+  .nav__item a:hover {
+    color: inherit;
+  }
+
+  .hero {
+    background-size: 180vw;
+    background-position: center;
+    background-color: #f7f7f7;
+  }
+
+  .hero img {
+    display: block;
+  }
+
+  .about [alt='chain icon'] {
+    padding-top: 50px;
+  }
+
+  .about p {
+    font-size: 20px;
+    padding: 35px 50px 0;
+  }
+
+  .work [alt='bicycle crank icon'],
+  [alt='bicycle frame icon'],
+  [alt='bicycle crank icon'] {
+    padding: 25px 0 15px;
+  }
+
+  .work p {
+    padding: 15px;
+  }
+
+  .btn-top:hover .arrow-up {
+    top: 50%;
+  }
+}
