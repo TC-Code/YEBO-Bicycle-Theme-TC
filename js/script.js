@@ -3,7 +3,8 @@ const btnWork = document.querySelector('.nav__item:nth-child(3) a');
 const btnShop = document.querySelector('.nav__item:nth-child(5) a');
 const btnContact = document.querySelector('.nav__item:nth-child(7) a');
 
-btnAbout.addEventListener('click', function () {
+btnAbout.addEventListener('click', function (event) {
+  event.preventDefault()
   window.scrollTo({
     top: innerHeight,
     left: 0,
@@ -12,7 +13,8 @@ btnAbout.addEventListener('click', function () {
 
 });
 
-btnWork.addEventListener('click', function () {
+btnWork.addEventListener('click', function (event) {
+  event.preventDefault()
   window.scrollTo({
     top: innerHeight + 470,
     left: 0,
@@ -20,7 +22,8 @@ btnWork.addEventListener('click', function () {
   });
 });
 
-btnShop.addEventListener('click', function () {
+btnShop.addEventListener('click', function (event) {
+  event.preventDefault()
   window.scrollTo({
     top: innerHeight + 470 + 1800 + 470,
     left: 0,
@@ -28,8 +31,8 @@ btnShop.addEventListener('click', function () {
   });
 });
 
-btnContact.addEventListener('click', function () {
-
+btnContact.addEventListener('click', function (event) {
+  event.preventDefault()
   window.scrollTo({
     top: innerHeight + document.body.scrollHeight,
     left: 0,
@@ -115,7 +118,8 @@ const carouselInterval = setInterval(changeSlide, time);
 const btnTop = document.querySelector('.btn-top');
 
 const goToTop = function () {
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', function (event) {
+    event.preventDefault()
     aboutDistanceFromTop = document.querySelector('.about').offsetTop;
     scrollValue = window.scrollY;
     if (scrollValue > aboutDistanceFromTop) {
@@ -127,7 +131,8 @@ const goToTop = function () {
 }
 goToTop()
 
-btnTop.addEventListener('click', function () {
+btnTop.addEventListener('click', function (event) {
+  event.preventDefault()
   window.scrollTo({
     top: 0,
     left: 0,
