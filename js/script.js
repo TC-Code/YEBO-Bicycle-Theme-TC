@@ -41,7 +41,7 @@ burgerBtnShop.addEventListener('click', function (event) {
   });
 });
 
-burgerBtnContact.addEventListener('click', function (event) {
+burgerBtnContact.addEventListener('touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: innerHeight + document.body.scrollHeight,
