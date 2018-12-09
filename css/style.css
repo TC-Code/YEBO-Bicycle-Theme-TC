@@ -803,7 +803,7 @@ footer img {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: -70%;
+    top: -100%;
     transform: translateX(-50%);
     font-size: 32px;
     background-color: rgba(100, 194, 158, .7);
