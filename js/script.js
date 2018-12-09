@@ -182,11 +182,11 @@ const goToTop = function () {
 }
 goToTop()
 
-btnTop.addEventListener('touchend', function (event) {
+btnTop.addEventListener('click', function (event) {
+  event.preventDefault()
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: 'smooth'
   });
-  event.preventDefault()
 })
