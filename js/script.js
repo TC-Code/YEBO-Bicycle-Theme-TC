@@ -1,3 +1,56 @@
+const burger = document.querySelector('.burger');
+const burgerNav = document.querySelector('.nav-burger');
+const burgerBars = document.querySelector('.fa-bars');
+const burgerAngleUp = document.querySelector('.fa-times');
+
+burger.addEventListener('click', () => {
+  burgerBars.classList.toggle('show');
+  burgerAngleUp.classList.toggle('show');
+  burgerNav.classList.toggle('show');
+})
+
+const burgerBtnAbout = document.querySelector('.nav-burger .nav__item:nth-child(1) a');
+const burgerBtnWork = document.querySelector('.nav-burger .nav__item:nth-child(2) a');
+const burgerBtnShop = document.querySelector('.nav-burger .nav__item:nth-child(3) a');
+const burgerBtnContact = document.querySelector('.nav-burger .nav__item:nth-child(4) a');
+
+burgerBtnAbout.addEventListener('click', function (event) {
+  event.preventDefault()
+  window.scrollTo({
+    top: innerHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+burgerBtnWork.addEventListener('click', function (event) {
+  event.preventDefault()
+  window.scrollTo({
+    top: document.querySelector('.work').offsetTop,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+burgerBtnShop.addEventListener('click', function (event) {
+  event.preventDefault()
+  window.scrollTo({
+    top: document.querySelector('.shop').offsetTop,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+burgerBtnContact.addEventListener('click', function (event) {
+  event.preventDefault()
+  window.scrollTo({
+    top: innerHeight + document.body.scrollHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+
 const btnAbout = document.querySelector('.nav__item:nth-child(1) a');
 const btnWork = document.querySelector('.nav__item:nth-child(3) a');
 const btnShop = document.querySelector('.nav__item:nth-child(5) a');
@@ -10,13 +63,12 @@ btnAbout.addEventListener('click', function (event) {
     left: 0,
     behavior: 'smooth'
   });
-
 });
 
 btnWork.addEventListener('click', function (event) {
   event.preventDefault()
   window.scrollTo({
-    top: innerHeight + 470,
+    top: document.querySelector('.work').offsetTop,
     left: 0,
     behavior: 'smooth'
   });
@@ -25,7 +77,7 @@ btnWork.addEventListener('click', function (event) {
 btnShop.addEventListener('click', function (event) {
   event.preventDefault()
   window.scrollTo({
-    top: innerHeight + 470 + 1800 + 470,
+    top: document.querySelector('.shop').offsetTop,
     left: 0,
     behavior: 'smooth'
   });
