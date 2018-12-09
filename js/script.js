@@ -50,7 +50,6 @@ burgerBtnContact.addEventListener('click', function (event) {
   });
 });
 
-
 const btnAbout = document.querySelector('.nav__item:nth-child(1) a');
 const btnWork = document.querySelector('.nav__item:nth-child(3) a');
 const btnShop = document.querySelector('.nav__item:nth-child(5) a');
