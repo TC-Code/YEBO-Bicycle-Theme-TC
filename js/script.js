@@ -170,7 +170,7 @@ const btnTop = document.querySelector('.btn-top');
 
 const goToTop = function () {
   window.addEventListener('scroll', function (event) {
-
+    event.preventDefault()
     aboutDistanceFromTop = document.querySelector('.about').offsetTop;
     scrollValue = window.scrollY;
     if (scrollValue > aboutDistanceFromTop) {
