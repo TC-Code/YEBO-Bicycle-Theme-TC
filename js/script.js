@@ -3,7 +3,7 @@ const burgerNav = document.querySelector('.nav-burger');
 const burgerBars = document.querySelector('.fa-bars');
 const burgerAngleUp = document.querySelector('.fa-times');
 
-burger.addEventListener('click', () => {
+burger.addEventListener('click touchstart', () => {
   burgerBars.classList.toggle('show');
   burgerAngleUp.classList.toggle('show');
   burgerNav.classList.toggle('show');
@@ -14,7 +14,7 @@ const burgerBtnWork = document.querySelector('.nav-burger .nav__item:nth-child(2
 const burgerBtnShop = document.querySelector('.nav-burger .nav__item:nth-child(3) a');
 const burgerBtnContact = document.querySelector('.nav-burger .nav__item:nth-child(4) a');
 
-burgerBtnAbout.addEventListener('click', function (event) {
+burgerBtnAbout.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: innerHeight,
@@ -23,7 +23,7 @@ burgerBtnAbout.addEventListener('click', function (event) {
   });
 });
 
-burgerBtnWork.addEventListener('click', function (event) {
+burgerBtnWork.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: document.querySelector('.work').offsetTop,
@@ -32,7 +32,7 @@ burgerBtnWork.addEventListener('click', function (event) {
   });
 });
 
-burgerBtnShop.addEventListener('click', function (event) {
+burgerBtnShop.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: document.querySelector('.shop').offsetTop,
@@ -41,7 +41,7 @@ burgerBtnShop.addEventListener('click', function (event) {
   });
 });
 
-burgerBtnContact.addEventListener('touchstart', function (event) {
+burgerBtnContact.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: innerHeight + document.body.scrollHeight,
@@ -55,7 +55,7 @@ const btnWork = document.querySelector('.nav__item:nth-child(3) a');
 const btnShop = document.querySelector('.nav__item:nth-child(5) a');
 const btnContact = document.querySelector('.nav__item:nth-child(7) a');
 
-btnAbout.addEventListener('click', function (event) {
+btnAbout.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: innerHeight,
@@ -64,7 +64,7 @@ btnAbout.addEventListener('click', function (event) {
   });
 });
 
-btnWork.addEventListener('click', function (event) {
+btnWork.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: document.querySelector('.work').offsetTop,
@@ -73,7 +73,7 @@ btnWork.addEventListener('click', function (event) {
   });
 });
 
-btnShop.addEventListener('click', function (event) {
+btnShop.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: document.querySelector('.shop').offsetTop,
@@ -82,7 +82,7 @@ btnShop.addEventListener('click', function (event) {
   });
 });
 
-btnContact.addEventListener('click', function (event) {
+btnContact.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: innerHeight + document.body.scrollHeight,
@@ -170,7 +170,6 @@ const btnTop = document.querySelector('.btn-top');
 
 const goToTop = function () {
   window.addEventListener('scroll', function (event) {
-    event.preventDefault()
     aboutDistanceFromTop = document.querySelector('.about').offsetTop;
     scrollValue = window.scrollY;
     if (scrollValue > aboutDistanceFromTop) {
