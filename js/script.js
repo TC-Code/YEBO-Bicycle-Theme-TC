@@ -182,7 +182,7 @@ const goToTop = function () {
 }
 goToTop()
 
-btnTop.addEventListener('click', function (event) {
+btnTop.addEventListener('click touchstart', function (event) {
   event.preventDefault()
   window.scrollTo({
     top: 0,
