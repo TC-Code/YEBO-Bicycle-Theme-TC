@@ -929,6 +929,17 @@ footer img {
     pointer-events: none;
   }
 
+  .box01 div:first-of-type {
+    position: relative;
+  }
+
+  .shop .box01 div:nth-child(1) img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .shop .shop__gallery .box01 div img,
   .shop .shop__gallery .box02 div img,
   .shop .shop__gallery .box03 div img {
