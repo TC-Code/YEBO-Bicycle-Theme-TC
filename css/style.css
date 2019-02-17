@@ -952,6 +952,7 @@ footer img {
     align-content: center;
   }
 
+  footer .address div:first-of-type,
   .center-vh {
     position: static;
     transform: none;
