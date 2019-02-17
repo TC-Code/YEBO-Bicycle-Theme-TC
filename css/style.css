@@ -675,7 +675,6 @@ footer .address *p {
 footer .socials {
   width: 44%;
   height: 100%;
-  position: relative;
   float: left;
 }
 
@@ -953,10 +952,6 @@ footer img {
     align-content: center;
   }
 
-  footer .socials {
-    position: static
-  }
-
   footer .address,
   footer .socials,
   footer .handcrafted {
@@ -965,7 +960,6 @@ footer img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    float: none;
   }
 
   footer .address {
