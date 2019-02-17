@@ -14,40 +14,40 @@ const burgerBtnWork = document.querySelector('.nav-burger .nav__item:nth-child(2
 const burgerBtnShop = document.querySelector('.nav-burger .nav__item:nth-child(3) a');
 const burgerBtnContact = document.querySelector('.nav-burger .nav__item:nth-child(4) a');
 
-burgerBtnAbout.addEventListener('click', function (event) {
-  event.preventDefault()
+burgerBtnAbout.addEventListener('click', (event) => {
   window.scrollTo({
     top: innerHeight,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
-burgerBtnWork.addEventListener('click', function (event) {
-  event.preventDefault()
+burgerBtnWork.addEventListener('click', (event) => {
   window.scrollTo({
     top: document.querySelector('.work').offsetTop,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
-burgerBtnShop.addEventListener('click', function (event) {
-  event.preventDefault()
+burgerBtnShop.addEventListener('click', (event) => {
   window.scrollTo({
     top: document.querySelector('.shop').offsetTop,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
-burgerBtnContact.addEventListener('touchstart', function (event) {
-  event.preventDefault()
+burgerBtnContact.addEventListener('touchstart', (event) => {
   window.scrollTo({
     top: innerHeight + document.body.scrollHeight,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
 const btnAbout = document.querySelector('.nav__item:nth-child(1) a');
@@ -55,40 +55,40 @@ const btnWork = document.querySelector('.nav__item:nth-child(3) a');
 const btnShop = document.querySelector('.nav__item:nth-child(5) a');
 const btnContact = document.querySelector('.nav__item:nth-child(7) a');
 
-btnAbout.addEventListener('click', function (event) {
-  event.preventDefault()
+btnAbout.addEventListener('click', (event) => {
   window.scrollTo({
     top: innerHeight,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
-btnWork.addEventListener('click', function (event) {
-  event.preventDefault()
+btnWork.addEventListener('click', (event) => {
   window.scrollTo({
     top: document.querySelector('.work').offsetTop,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
-btnShop.addEventListener('click', function (event) {
-  event.preventDefault()
+btnShop.addEventListener('click', (event) => {
   window.scrollTo({
     top: document.querySelector('.shop').offsetTop,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
-btnContact.addEventListener('click', function (event) {
-  event.preventDefault()
+btnContact.addEventListener('click', (event) => {
   window.scrollTo({
     top: innerHeight + document.body.scrollHeight,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 });
 
 //Scroll - slide icons in 'Work' section.
@@ -168,9 +168,8 @@ const carouselInterval = setInterval(changeSlide, time);
 // Button "Go To Top"
 const btnTop = document.querySelector('.btn-top');
 
-const goToTop = function () {
-  window.addEventListener('scroll', function (event) {
-    event.preventDefault()
+const goToTop = () => {
+  window.addEventListener('scroll', (event) => {
     aboutDistanceFromTop = document.querySelector('.about').offsetTop;
     scrollValue = window.scrollY;
     if (scrollValue > aboutDistanceFromTop) {
@@ -178,15 +177,16 @@ const goToTop = function () {
     } else {
       btnTop.style.display = 'none';
     }
-  })
+    event.preventDefault();
+  });
 }
 goToTop()
 
-btnTop.addEventListener('click', function (event) {
-  event.preventDefault()
+btnTop.addEventListener('click', (event) => {
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: 'smooth'
   });
+  event.preventDefault()
 })
