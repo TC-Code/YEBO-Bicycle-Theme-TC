@@ -964,8 +964,9 @@ footer img {
   }
 
   footer .address {
-    margin: 20px 0;
-    padding-bottom: 50px;
+    position: relative;
+    top: -10px;
+    left: 0;
   }
 
   footer .handcrafted p,
