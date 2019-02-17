@@ -952,6 +952,11 @@ footer img {
     align-content: center;
   }
 
+  .center-vh {
+    position: static;
+    transform: none;
+  }
+
   footer .address,
   footer .socials,
   footer .handcrafted,
@@ -961,12 +966,6 @@ footer img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  footer .address {
-    position: relative;
-    top: -10px;
-    left: 0;
   }
 
   footer .handcrafted p,
