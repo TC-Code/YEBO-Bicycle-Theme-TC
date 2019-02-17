@@ -415,7 +415,6 @@ nav ul.nav {
   transition: .5s;
 }
 
-
 .shop .box01 div:nth-child(2) {
   float: left;
   width: 50%;
@@ -544,6 +543,9 @@ nav ul.nav {
 /* Shop button */
 
 .shop__discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 200px;
