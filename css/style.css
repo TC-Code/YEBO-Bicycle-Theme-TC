@@ -953,6 +953,10 @@ footer img {
     align-content: center;
   }
 
+  footer .socials {
+    position: static
+  }
+
   footer .address,
   footer .socials,
   footer .handcrafted {
