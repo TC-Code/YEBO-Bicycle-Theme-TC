@@ -925,6 +925,16 @@ footer img {
     flex-wrap: wrap;
   }
 
+  .shop {
+    pointer-events: none;
+  }
+
+  .shop .shop__gallery .box01 div img,
+  .shop .shop__gallery .box02 div img,
+  .shop .shop__gallery .box03 div img {
+    display: block;
+  }
+
   .shop__gallery .box01,
   .shop__gallery .box02,
   .shop__gallery .box03 {
