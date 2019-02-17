@@ -41,9 +41,9 @@ burgerBtnShop.addEventListener('click', (event) => {
   event.preventDefault()
 });
 
-burgerBtnContact.addEventListener('touchstart', (event) => {
+burgerBtnContact.addEventListener('click', (event) => {
   window.scrollTo({
-    top: innerHeight + document.body.scrollHeight,
+    top: document.body.scrollHeight,
     left: 0,
     behavior: 'smooth'
   });
@@ -84,7 +84,7 @@ btnShop.addEventListener('click', (event) => {
 
 btnContact.addEventListener('click', (event) => {
   window.scrollTo({
-    top: innerHeight + document.body.scrollHeight,
+    top: document.body.scrollHeight,
     left: 0,
     behavior: 'smooth'
   });
