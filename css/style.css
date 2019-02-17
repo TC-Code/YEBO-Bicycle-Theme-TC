@@ -958,6 +958,7 @@ footer img {
   footer .handcrafted {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -979,6 +980,7 @@ footer img {
   }
 
   footer .handcrafted img {
+    margin-top: 20px;
     object-fit: contain;
   }
 }
