@@ -16,7 +16,7 @@ const burgerBtnContact = document.querySelector('.nav-burger .nav__item:nth-chil
 
 burgerBtnAbout.addEventListener('click', (event) => {
   window.scrollTo({
-    top: innerHeight,
+    top: 777,
     left: 0,
     behavior: 'smooth'
   });
