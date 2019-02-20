@@ -14,14 +14,11 @@ const burgerBtnWork = document.querySelector('.nav-burger .nav__item:nth-child(2
 const burgerBtnShop = document.querySelector('.nav-burger .nav__item:nth-child(3) a');
 const burgerBtnContact = document.querySelector('.nav-burger .nav__item:nth-child(4) a');
 
-burgerBtnAbout.addEventListener('click', (event) => {
-  window.scrollTo({
-    top: 777,
-    left: 0,
-    behavior: 'smooth'
-  });
-  event.preventDefault()
-});
+burgerBtnAbout.addEventListener('click', () => window.scrollTo({
+  top: 777,
+  left: 0,
+  behavior: 'smooth',
+}));
 
 burgerBtnWork.addEventListener('click', (event) => {
   window.scrollTo({
