@@ -179,11 +179,8 @@ const goToTop = () => {
 }
 goToTop()
 
-btnTop.addEventListener('click', (event) => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
-  });
-  event.preventDefault()
-})
+btnTop.addEventListener('click', () => window.scroll({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+}));
